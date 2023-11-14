@@ -217,6 +217,24 @@ hr {
         width: 300px;
         right: 50px;
     }
+
+    /* Reason section */
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+        #benefits-physical > div,
+        #benefits-mental > div {
+            width: 75%;
+        }
+
+        #benefits-mental {
+           text-align: end; 
+           align-self: flex-end;
+        }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -227,3 +245,29 @@ hr {
 
 }
        
+@media screen and (min-width: 1200px) {
+    #benfits {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #benefits > div {
+        flex: 1;
+    }
+
+    #benefits-image {
+        order: 0;
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
+}

@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
-    font-family:'Lato', sans-serif ;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Header */
@@ -51,7 +51,7 @@ h1 {
 
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -86,11 +86,18 @@ nav {
 
 /* Main content */
 main {
-    background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
 }
+
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
+}
+
 
 /* Footer */
 #social-networks {
@@ -109,6 +116,7 @@ main {
 
 /* Media query: tablets and larger (768 and up*/
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -122,7 +130,7 @@ main {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -138,7 +146,7 @@ main {
     }
 
     /* Main content */
-    main{
+    main {
         /* Push main content down to accomodate larger header */
         margin-top: 79px;
     }
@@ -149,5 +157,5 @@ main {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
-    
+
 }

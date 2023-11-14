@@ -25,6 +25,10 @@ h1, h2, h3 {
     color: #252525;
 }
 
+.hidden-heading {
+    display: none;
+}
+
 /* Header */
 header {
     background-color: #ffffff;
@@ -46,7 +50,7 @@ header a {
 
 
 #menu {
-    font-size: 100%;
+    font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
     
@@ -112,11 +116,12 @@ main {
     padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text > h2, 
+#cover-text > h3 {
     color: #ffffff;
 }
 
-/* Reason section */
+/* Reasons section */
 #reasons {
     width: 90%;
     margin: 20px auto;
@@ -138,17 +143,17 @@ main {
     padding: 0 20px;
 }
 
-hr {
+#benefits hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
 }
 
 #circle-cover-bg {
-    background: url("../images/reasons-image.webp") no-repeat center center/cover;
+    background: url('../images/reasons-image.webp') no-repeat center center/cover;
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
-    /* Makes the square image into circle */
+    /* Makes the square image into a circle */
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
@@ -162,7 +167,7 @@ hr {
 
 /* Meetup Times section */
 #times {
-    background: url("../images/dublin-city.webp") no-repeat center center/cover;
+    background: url('../images/dublin-city.webp') no-repeat center center/cover;
     /* Handles resposivity without the need for a media query */
     display: flex;
     flex-wrap: wrap;
@@ -201,7 +206,7 @@ hr {
     color: #3a3a3a;
 }
 
-/* Media query: tablets and larger (768 and up*/
+/* Media query: tablets and larger (768px and up*/
 @media screen and (min-width: 768px) {
     
     /* Header */
@@ -234,7 +239,7 @@ hr {
 
     /* Main content */
     main {
-        /* Push main content down to accomodate larger header */
+        /* Push main content down to accommodate larger header */
         margin-top: 79px;
     }
 
@@ -244,7 +249,7 @@ hr {
         right: 50px;
     }
 
-    /* Reason section */
+    /* Reasons section */
     #benefits-physical,
     #benefits-mental {
         display: flex;
@@ -257,7 +262,7 @@ hr {
             width: 75%;
         }
 
-        #benefits-mental {
+        #benefits-mental  {
            text-align: end; 
            align-self: flex-end;
         }
@@ -273,7 +278,7 @@ hr {
  
 /* Large devices 1200px and up */
 @media screen and (min-width: 1200px) {
-    #benfits {
+    #benefits {
         display: flex;
         flex-direction: row;
     }
